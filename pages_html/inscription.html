@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT - Inscription étudiant</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo IIT.png" alt="Logo Institut International de Technologie" class="logo">
+        </div>
+
+        <h1 class="titre-etablissement">Université Nord Américaine Privée: Institut International de Technologie</h1>
+
+        <div class="banniere-campus">
+            <img src="../images/campus.jfif" alt="Campus IIT" class="img-campus">
+        </div>
+    </header>
+
+    <nav class="menu-navigation">
+        <a href="../index.html" class="bouton-nav">Actualité</a>
+        <a href="inscription.html" class="bouton-nav actif">Inscription</a>
+        <a href="galerie.html" class="bouton-nav">Galerie</a>
+    </nav>
+
+    <main class="conteneur-formulaire">
+
+        <form action="#" method="post" enctype="multipart/form-data" class="form-inscription">
+
+            <fieldset class="cadre-inscription">
+                <legend class="legende-form">Inscription étudiant</legend>
+
+                <div class="ligne-champ">
+                    <label for="nom" class="label-champ">Nom</label>
+                    <input type="text" id="nom" name="nom" class="input-texte" required>
+                </div>
+
+                <div class="ligne-champ">
+                    <label for="prenom" class="label-champ">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" class="input-texte" required>
+                </div>
+
+                <div class="ligne-champ">
+                    <label for="naissance" class="label-champ">Naissance</label>
+                    <input type="date" id="naissance" name="naissance" class="input-texte" placeholder="aaaa-mm-jj">
+                </div>
+
+                <div class="ligne-champ">
+                    <span class="label-champ">Sexe</span>
+                    <div class="options-inline">
+                        <label>
+                            <input type="radio" name="sexe" value="M" checked> Masculin
+                        </label>
+                        <label>
+                            <input type="radio" name="sexe" value="F"> Féminin
+                        </label>
+                    </div>
+                </div>
+
+                <div class="ligne-champ">
+                    <label for="pays" class="label-champ">Pays</label>
+                    <select id="pays" name="pays" class="input-select">
+                        <option value="Tunisie" selected>Tunisie</option>
+                        <option value="France">France</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="ligne-champ">
+                    <span class="label-champ">Langues</span>
+                    <div class="options-checkboxes">
+                        <label><input type="checkbox" name="langues[]" value="Arabe"> Arabe</label>
+                        <label><input type="checkbox" name="langues[]" value="Français"> Français</label>
+                        <label><input type="checkbox" name="langues[]" value="Anglais"> Anglais</label>
+                    </div>
+                </div>
+
+                <div class="ligne-champ">
+                    <label for="image-etudiant" class="label-champ">Image</label>
+                    <input type="file" id="image-etudiant" name="image" accept="image/*" class="input-fichier">
+                </div>
+
+                <div class="ligne-bouton">
+                    <input type="submit" value="Valider" class="bouton-valider">
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer class="pied-page">
+        <address class="coordonnees">
+            Route M'harza Km 1.5, Sfax<br>
+            Tél : +216 74 465 020<br>
+            MAIL : <a href="mailto:contact@iit.tn">contact@iit.tn</a>
+        </address>
+    </footer>
+
+</body>
+</html>
